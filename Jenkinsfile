@@ -14,8 +14,8 @@ pipeline {
             }
             stage('JaCoCo Report') {
             steps {
-                      jacoco()
-                  }
+               jacoco()
+            }
         }
         stage('sonar analysis') {
             steps {
@@ -24,4 +24,5 @@ pipeline {
             }
         }   
     }
+}
 }
